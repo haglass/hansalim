@@ -47,7 +47,24 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+.wrap > section {
+  padding: 80px 0;
+}
 /* 타이틀레이아웃 */
+.season-title {
+  position: relative;
+  display: block;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000;
+  font-size: 400;
+}
+.season-title b {
+  font-weight: 700;
+}
+..season-title .blue {
+  color: #76bd42;
+}
 /* 제품레이아웃 */
 /* 섹션레이아웃 */
 /* 레이아웃 */
@@ -410,8 +427,102 @@ body {
 .visual {
   position: relative;
   display: block;
+  width: 100%;
+  height: 410px;
+  overflow-y: hidden;
+  padding: 0 !important;
 }
-
+.visual-slide {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.visual-slide-page {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.visual-slide-page a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.visual-prev,
+.visual-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  border: 0;
+  cursor: pointer;
+  width: 64px;
+  height: 64px;
+  font-size: 0;
+  border-radius: 50%;
+}
+.visual-prev {
+  left: calc(50% - 600px);
+  background: rgba(0, 0, 0, 0) url("../images/visualArrP.png") no-repeat;
+  background-position: 0 -64px;
+}
+.visual-prev:hover {
+  background: rgba(0, 0, 0, 0.3) url("../images/visualArrP.png") no-repeat;
+  background-position: 0 -64px;
+}
+.visual-next {
+  right: calc(50% - 600px);
+  background: rgba(0, 0, 0, 0) url("../images/visualArrN.png") no-repeat;
+  background-position: 0 -64px;
+}
+.visual-next:hover {
+  background: rgba(0, 0, 0, 0.3) url("../images/visualArrP.png") no-repeat;
+  background-position: 0 -64px;
+}
+.visual-control {
+  position: absolute;
+  bottom: 43px;
+  left: calc(50% - 540px);
+  display: block;
+}
+.visual-play {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url("../images/visualPlay.png") no-repeat;
+  cursor: pointer;
+  float: left;
+  border: 0;
+}
+.visual-pg {
+  position: relative;
+  display: block;
+  width: 52px;
+  height: 30px;
+  background: url("../images/visualNum.png") no-repeat;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  font-size: 14px;
+  margin-left: 5px;
+  float: left;
+}
+.visual-more {
+  position: relative;
+  display: block;
+  width: 29px;
+  height: 30px;
+  background: url("../images/visualMore.png") no-repeat;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  margin-left: 3px;
+  float: left;
+}
 /* 오늘의 상품 */
 .today {
   position: relative;
