@@ -96,6 +96,9 @@ body {
   height: 50px !important;
   overflow: hidden;
 }
+.good-recent::after {
+  content: none !important;
+}
 .good-recent img {
   position: absolute;
   left: 50%;
