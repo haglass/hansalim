@@ -86,23 +86,23 @@ body {
 .fix-shop::after {
   background-position: 0 -32px !important;
 }
-.good-resent {
-  position: relative;
+.good-recent {
   display: inline-block !important;
   width: 50px !important;
   height: 50px !important;
   overflow: hidden;
 }
-.good-resent img {
+/* 뒷편 아이콘 없애기 */
+.good-recent::after {
+  content: none !important;
+}
+.good-recent img {
   position: absolute;
   left: 50%;
   top: 50%;
+  /* 위치는 고정 내용!!! 만 변경 */
   transform: translate(-50%, -50%);
   width: 100%;
-}
-/* 뒷편 아이콘 없애기(투명이미지일때 아이콘이 보이기때문에 none) */
-.good-resent::after {
-  content: none !important;
 }
 .fix-qa::after {
   background-position: 0 calc(-32px * 2) !important;
